@@ -1,7 +1,7 @@
-# Lottery-turntable 九宫格抽奖jQuery插件
-本插件是修改自网友插件：http://www.sucaihuo.com/js/129.html。
-####1  增加了自由设定奖品抽奖机率
-####2  增加了抽中以后的提示文字
+#### *Lottery-turntable 九宫格抽奖jQuery插件*
+#### *本插件是修改自网友插件：http://www.sucaihuo.com/js/129.html。*
+#### *增加了自由设定奖品抽奖机率*
+#### *增加了抽中以后的提示文字*
 
 ### 配置项
 #### *index: `Number` (default: `0`)*
