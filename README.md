@@ -28,21 +28,26 @@ setTimeout的ID，用clearTimeout清除。
 
 ### 方法
 
-#### $.lottery.init()
+#### lottery.init()
 
 初始化运行(非配置参数)
 
-#### $.lottery.roll(inverval)
+#### lottery.roll(inverval)
 
 开始运行
 
-#### $.lottery.stop(selector)
+#### lottery.stop(selector)
 
 停止运行
 
-### Notice
+### 提示
 * 属性设置方式：
 lottery.speend=20;
+
+
+
+
+
 ```
 
 ## 怎么使用
@@ -357,9 +362,4 @@ window.onload=function(){
 
 ```
 
-## License
-
-
-## Contact
-newued.com
-2535565243@qq.com
+# License
