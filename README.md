@@ -1,16 +1,51 @@
-# jQuery-lazyload-any
+# Lottery-turntable 九宫格抽奖jQuery插件
 本插件是修改自网友插件：http://www.sucaihuo.com/js/129.html。
-1  增加了自由设定奖品抽奖机率
-2  增加了抽中以后的提示文字
+####1  增加了自由设定奖品抽奖机率
+####2  增加了抽中以后的提示文字
 
+### 配置项
+#### *index: `Number` (default: `0`)*
+当前转动到哪个位置，起点位置。
+#### *count: `Function(element)` (default: `undefined`)*
+总共有多少个位置
+#### *timer: `Number` (default: `0`)*
+setTimeout的ID，用clearTimeout清除。
+#### *speed: `Number` (default: `0`)*
+初始转动速度
+#### *timers: `Number` (default: `0`)*
+转动次数
+#### *cycle: `Number` (default: `0`)*
+转动基本次数：即至少需要转动多少次再进入抽奖环节
+#### *prize: `Number` (default: `0`)*
+中奖位置
+#### *probability: `Array` (default: `0`)*
+设置所有奖品几率//所有奖品几率总和是100。
+[0,8,20,30,40,50,60,70,80,85,90,95]对应的每个奖品的机率是[8,12,10,10……,5]
+#### *giftTipsArr: `Array` (default: `0`)*
+设置所有奖品提示文字
+#### *giftTip: `String` (default: `""`)*
+初始化提示文字
 
-## Installation
-You can install jquery-lazyload-any by using Bower.
+### 方法
+
+#### $.lottery.init()
+
+初始化运行(非配置参数)
+
+#### $.lottery.roll(inverval)
+
+开始运行
+
+#### $.lottery.stop(selector)
+
+停止运行
+
+### Notice
+* 属性设置方式：
+lottery.speend=20;
 ```
-bower install jquery-lazyload-any
-```
 
-## Usage
+## 怎么使用
 * 样式*
 ```HTML
 #lottery{width:574px;height:584px;margin:20px auto 0;background:url(images/bg.jpg) no-repeat;padding:50px 55px;}
@@ -159,46 +194,7 @@ $('#you-want-lazyload').lazyload(options);
 ```
 You should choose only one style. When multiple styles set, priority is Attribute > Script > Comment.
 
-### 配置项
-#### *index: `Number` (default: `0`)*
-当前转动到哪个位置，起点位置。
-#### *count: `Function(element)` (default: `undefined`)*
-总共有多少个位置
-#### *timer: `Number` (default: `0`)*
-setTimeout的ID，用clearTimeout清除。
-#### *speed: `Number` (default: `0`)*
-初始转动速度
-#### *timers: `Number` (default: `0`)*
-转动次数
-#### *cycle: `Number` (default: `0`)*
-转动基本次数：即至少需要转动多少次再进入抽奖环节
-#### *prize: `Number` (default: `0`)*
-中奖位置
-#### *probability: `Array` (default: `0`)*
-设置所有奖品几率//所有奖品几率总和是100。
-[0,8,20,30,40,50,60,70,80,85,90,95]对应的每个奖品的机率是[8,12,10,10……,5]
-#### *giftTipsArr: `Array` (default: `0`)*
-设置所有奖品提示文字
-#### *giftTip: `String` (default: `""`)*
-初始化提示文字
 
-### 方法
-
-#### $.lottery.init()
-
-初始化运行(非配置参数)
-
-#### $.lottery.roll(inverval)
-
-开始运行
-
-#### $.lottery.stop(selector)
-
-停止运行
-
-### Notice
-* 属性设置方式：
-lottery.speend=20;
 ## Example
 HTML
 ```HTML
